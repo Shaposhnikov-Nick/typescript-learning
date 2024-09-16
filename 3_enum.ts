@@ -18,4 +18,4 @@ enum SocialMedia {
 }
 
 const social = SocialMedia.FACEBOOK;
-console.log(social);
+console.log(social); // FB

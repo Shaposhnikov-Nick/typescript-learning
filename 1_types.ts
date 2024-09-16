@@ -11,18 +11,6 @@ const num3 = 3e10;
 // string
 const str: string = "Hello";
 
-// array
-const numberArray: number[] = [1, 2, 3, 4];
-const numberArray2: Array<number> = [1, 2, 3, 4];
-const words: Array<string> = ["hello", "world"];
-const some: Array<any> = [1, 2, "one", true];
-
-// readonly array
-const array2: ReadonlyArray<number> = [1, 2, 3];
-
-// tuple - массив из разных типов данных
-const contacts: [string, number] = ["Nick", 12345];
-
 // any
 let variable: any = 42;
 variable = "String";

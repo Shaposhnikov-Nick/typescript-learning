@@ -10,6 +10,7 @@ let key: PersonKeys = "age";
 key = "name";
 // key = 'job' // error
 
+// создание типа из другого типа
 type User = {
   _id: number;
   name: string;

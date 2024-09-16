@@ -16,4 +16,7 @@ let bob: [string, number, boolean?] = ["Bob", 41, true];
 let tom: [string, number, boolean?] = ["Tom", 36];
 
 // кортеж произвольной длины
-let math: [string, number] = ["math", 1, 2, 3, 4];
+let math: [string, ...number[]] = ["math", 1, 2, 3, 4];
+
+// кортеж только для чтения
+const tim: readonly [string, number] = ["Tim", 36];

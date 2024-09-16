@@ -1,6 +1,8 @@
 // вспомогательные конструкции
 
 // typeof - проверка, что объект определенного типа
+//"string" "number" "bigint" "boolean" "symbol" "undefined" "object" "function"
+// !== undefined
 function strip(x: number | string) {
   if (typeof x === "number") {
     return x.toFixed(2);
@@ -8,7 +10,7 @@ function strip(x: number | string) {
   return x.trim();
 }
 
-// instansof - проверка, что объект является экземпляром определенного класса
+// instanceof - проверка, что объект является экземпляром определенного класса
 class MyResponse {
   header = "response header";
   result = "response result";
@@ -29,3 +31,10 @@ function handle(response: MyResponse | MyError) {
     info: response.header + response.message,
   };
 }
+
+//
+type AlertType = "success" | "danger" | "warning";
+function setAlertType(type: AlertType) {}
+
+setAlertType("success");
+// setAlertType('default')
