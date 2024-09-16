@@ -50,6 +50,27 @@ class Cat extends Animal {
 const cat1 = new Cat();
 console.log(cat1.color);
 
+// переопределение конструктора
+class Person {
+  name: string;
+  constructor(userName: string) {
+    this.name = userName;
+  }
+  print(): void {
+    console.log(`Имя: ${this.name}`);
+  }
+}
+
+class Employee extends Person {
+  company: string;
+  constructor(name: string, company: string) {
+    super(name);
+    this.company = company;
+  }
+  work(): void {
+    console.log(`${this.name} работает в компании ${this.company}`);
+  }
+}
 // абстрактные классы и методы
 abstract class Component {
   abstract render(): void;

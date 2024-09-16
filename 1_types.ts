@@ -15,6 +15,10 @@ const str: string = "Hello";
 const numberArray: number[] = [1, 2, 3, 4];
 const numberArray2: Array<number> = [1, 2, 3, 4];
 const words: Array<string> = ["hello", "world"];
+const some: Array<any> = [1, 2, "one", true];
+
+// readonly array
+const array2: ReadonlyArray<number> = [1, 2, 3];
 
 // tuple - массив из разных типов данных
 const contacts: [string, number] = ["Nick", 12345];
@@ -33,3 +37,11 @@ sayName("nick");
 function throwError(message: string): never {
   throw new Error(message);
 }
+
+// Type - создание своих типов
+type Login = string;
+const log: Login = "admin";
+
+type ID = string | number;
+const id1: ID = "one";
+const id2: ID = 1;
